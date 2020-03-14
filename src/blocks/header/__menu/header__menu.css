@@ -1,0 +1,7 @@
+.header__menu {
+    display: flex;
+}
+
+.header__menu :not(:last-child) {
+    margin-right: 34px;
+}

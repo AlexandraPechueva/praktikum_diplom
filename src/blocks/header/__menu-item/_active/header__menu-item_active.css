@@ -1,0 +1,7 @@
+.header__menu-item_active {
+    background-image: url('../../../../images/Stroke.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+}

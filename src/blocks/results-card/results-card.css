@@ -1,0 +1,12 @@
+@import url(./__date/results-card__date.css);
+@import url(./__photo/results-card__photo.css);
+@import url(./__source/results-card__source.css);
+@import url(./__title/results-card__title.css);
+@import url(./__content/results-card__content.css);
+@import url(./__text/results-card__text.css);
+
+.results-card {
+    min-height: 576px;
+    background-color: #ffffff;
+    border-radius: 16px;
+}

@@ -1,0 +1,7 @@
+.results__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    justify-content: center;
+}

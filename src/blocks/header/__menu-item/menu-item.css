@@ -1,0 +1,14 @@
+@import url(./_active/header__menu-item_active.css);
+@import url(./_white/header__menu-item_white.css);
+
+.header__menu-item {
+    padding: 25px 0;
+}
+
+.header__menu-item:hover {
+    background-image: url('../../../images/Stroke.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+}

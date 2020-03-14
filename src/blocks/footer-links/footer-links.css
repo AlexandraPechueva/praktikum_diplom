@@ -1,0 +1,6 @@
+@import url(./__item/footer-links__item.css);
+@import url(./__icon/footer-links__icon.css);
+
+.footer-links :not(:last-child) {
+    margin-right: 26px;
+}

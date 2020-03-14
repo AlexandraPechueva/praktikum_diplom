@@ -1,0 +1,21 @@
+@import url(./__section/root__section.css);
+
+.root {
+  min-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Roboto', Arial, sans-serif;;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1a1b22;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .root {
+    padding-bottom: 140px;
+  }
+} */
