@@ -1,0 +1,9 @@
+@import url(./__title/not-found__title.css);
+@import url(./__subtitle/not-found__subtitle.css);
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

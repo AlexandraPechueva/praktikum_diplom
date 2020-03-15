@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/root/root.css);
+@import url(../blocks/muted-text/muted-text.css);
 @import url(../blocks/link/link.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
@@ -16,7 +17,9 @@
 @import url(../blocks/copyright/copyright.css);
 @import url(../blocks/footer-menu/footer-menu.css);
 @import url(../blocks/footer-links/footer-links.css);
-
+@import url(../blocks/preloader/preloader.css);
+@import url(../blocks/circle-preloader/circle-preloader.css);
+@import url(../blocks/not-found/not-found.css);
 
 /* body {
   background-color: #000;
