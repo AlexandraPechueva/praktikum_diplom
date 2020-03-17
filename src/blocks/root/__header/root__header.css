@@ -1,0 +1,27 @@
+.root__header {
+    padding: 0 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .root__header {
+        padding: 0 40px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .root__header {
+        padding: 0 52px;
+    }
+} 
+
+@media screen and (max-width: 580px) {
+    .root__header {
+        padding: 0 80px;
+    }
+} 
+
+@media screen and (max-width: 425px) {
+    .root__header {
+        padding: 0 16px;
+    }
+} 

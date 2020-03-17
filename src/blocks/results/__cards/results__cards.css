@@ -1,7 +1,28 @@
 .results__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .results__cards {
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .results__cards {
+        grid-template-columns:  repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .results__cards {
+        grid-template-columns: 100%;
+    }
 }

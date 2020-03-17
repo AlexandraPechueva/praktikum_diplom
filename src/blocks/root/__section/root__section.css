@@ -2,3 +2,27 @@
     width: calc(100% - 208px);
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+    .root__section {
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .root__section {
+        width: calc(100% - 90px);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .root__section {
+        width: calc(100% - 160px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .root__section {
+        width: calc(100% - 32px);
+    }
+}

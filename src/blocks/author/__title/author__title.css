@@ -3,3 +3,11 @@
     line-height: 46px;
     margin: 51px 0 24px 0;
 }
+
+@media screen and (max-width: 992px) {
+    .author__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+    }
+}

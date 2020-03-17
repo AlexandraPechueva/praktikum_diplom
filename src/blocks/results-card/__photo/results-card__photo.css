@@ -4,3 +4,15 @@
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
 }
+
+@media screen and (max-width: 992px) {
+    .results-card__photo {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .results-card__photo {
+        height: 196px;
+    }
+}

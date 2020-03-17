@@ -1,3 +1,22 @@
 .search__panel{
      width: 608px;
 }
+
+@media screen and (max-width: 992px) {
+     .search__panel{
+          width: 452px;
+     }
+}
+
+
+@media screen and (max-width: 580px) {
+     .search__panel{
+          width: 400px;
+     }
+}
+
+@media screen and (max-width: 425px) {
+     .search__panel{
+          width: 288px;
+     }
+}

@@ -1,3 +1,9 @@
 .results__cards-wrapper {
     padding: 64px 0;
 }
+
+@media screen and (max-width: 1280px) {
+    .results__cards-wrapper {
+        padding: 32px 0;
+    }
+}

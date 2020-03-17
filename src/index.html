@@ -6,6 +6,7 @@
     <title>NewsAnalyzer</title>
     <meta name="description" content="Дипломный проект Яндекс.практикум по профессии frontend-разработчик" />
     <meta name="author" content="Печуева Александра">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="" type="image/png">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
 </head>
@@ -13,7 +14,7 @@
 <body>
     <div class="root">
         <div class="header-extended">
-            <header class="header root__section">
+            <header class="header root__header">
                 <p class="logo">NewsAnalyzer</p>
                 <nav class="header__menu">
                     <a href="/"
@@ -66,10 +67,11 @@
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">Национальное достояние – парки</h3>
-                                <p class="results-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                                    здесь начала складываться система национальных парков – охраняемых территорий, где и
-                                    сегодня каждый может приобщиться к природе.</p>
+                                <h3 class="results-card__title title"> Национальное достояние – парки</h3>
+                                <p class="results-card__text">В 2016 году Америка отмечала важный юбилей:
+                                    сто лет назад здесь начала складываться система национальных парков – охраняемых
+                                    территорий, где и сегодня каждый может приобщиться к природе.
+                                </p>
                                 <p class="results-card__source muted-text__small">Лента.ру</p>
                             </div>
                         </div>
@@ -165,10 +167,11 @@
             <nav class="footer-menu">
                 <a href="/" class="link footer-menu__item">Главная</a>
                 <a href="/src/about.html" class="link footer-menu__item">О проекте</a>
-                <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">О проекте</a>
+                <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
             </nav>
+
             <div class="footer-links">
-                <a href="https://github.com/" class="footer-links__item">
+                <a href="https://www.github.com/" class="footer-links__item">
                     <img src="../src/images/github.svg" alt="github" class="footer-links__icon">
                 </a>
 

@@ -6,3 +6,9 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+@media screen and (max-width: 580px) {
+    .button {
+        height: 56px;
+    }
+}

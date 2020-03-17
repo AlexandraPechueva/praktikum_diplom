@@ -4,6 +4,13 @@
     font-weight: normal;
     font-style: normal;
     margin: 0 0 64px 0;
-    width: 545px;
+    width: 100%;
     color: #ffffff;
+}
+
+@media screen and (max-width: 580px) {
+    .search__subtitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
