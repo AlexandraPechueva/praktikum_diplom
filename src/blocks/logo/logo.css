@@ -1,3 +1,5 @@
+@import url(./_logo/logo_white.css);
+
 .logo {
     margin: 0;
     font-family: 'Roboto Slab', serif;
@@ -5,7 +7,6 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    color: #ffffff;
     display: flex;
     align-items: center;
 }

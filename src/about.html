@@ -8,7 +8,17 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="root">
+        <!-- <div class="header-extended"> -->
+        <header class="header root__header">
+            <p class="logo">NewsAnalyzer</p>
+            <nav class="header__menu">
+                <a href="/" class="link header__menu-item">Главная</a>
+                <a href="/src/about.html" class="link header__menu-item header__menu-item_active ">О проекте</a>
+            </nav>
+        </header>
+        <!-- </div> -->
+    </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 
