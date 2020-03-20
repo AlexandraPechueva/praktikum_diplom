@@ -1,0 +1,12 @@
+@import url(./_top/chart__times-wrapper_top.css);
+@import url(./_bottom/chart__times-wrapper_bottom.css);
+
+.chart__times-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #b6bcbf;
+}

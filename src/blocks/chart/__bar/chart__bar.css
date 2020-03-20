@@ -1,0 +1,13 @@
+.chart__bar {
+    background: #2f71e5;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+}

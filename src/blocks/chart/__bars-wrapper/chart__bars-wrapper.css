@@ -1,0 +1,6 @@
+.chart__bars-wrapper {
+    grid-area: bars;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
