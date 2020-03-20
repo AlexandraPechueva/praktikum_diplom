@@ -1,5 +1,7 @@
 .results-card__date {
     font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 24px;
     margin: 0 0 12px;
 }
 

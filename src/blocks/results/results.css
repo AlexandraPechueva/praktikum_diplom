@@ -1,8 +1,4 @@
-@import url(./__title/results__title.css);
 @import url(./__inside/results__inside.css);
-@import url(./__header/results__header.css);
-@import url(./__arrow/results__arrow.css);
-@import url(./__link/results__link.css);
 @import url(./__cards-wrapper/results__cards-wrapper.css);
 @import url(./__cards/results__cards.css);
 @import url(./__button-wrapper/results__button-wrapper.css);
@@ -16,5 +12,11 @@
 @media screen and (max-width: 1280px) {
     .results {
         padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .results {
+        padding: 32px 0 44px;
     }
 }

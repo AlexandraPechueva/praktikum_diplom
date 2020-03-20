@@ -1,0 +1,25 @@
+/* .commits {
+    padding: 80px 0;
+    background-color: #f5f6f7;
+}
+
+@media screen and (max-width: 1280px) {
+    .commits {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .commits {
+        padding: 32px;
+    }
+} */
+@import url(./__slider/commits__slider.css);
+
+.commits {
+    min-height: 590px;
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.list-header__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .list-header__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

@@ -6,13 +6,6 @@
 @import url(./__text/results-card__text.css);
 
 .results-card {
-    min-height: 576px;
     background-color: #ffffff;
     border-radius: 16px;
-}
-
-@media screen and (max-width: 1280px) {
-    .results-card {
-        min-height: 420px;
-    }
 }

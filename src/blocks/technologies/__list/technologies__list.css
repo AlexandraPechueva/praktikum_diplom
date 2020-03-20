@@ -1,0 +1,6 @@
+.technologies__list {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 127px;
+}

@@ -14,19 +14,19 @@
 <body>
     <div class="root">
         <div class="header-extended">
-            <header class="header root__header">
+            <header class="header header_white root__fullwidth-section">
                 <p class="logo logo_white">NewsAnalyzer</p>
                 <nav class="header__menu">
                     <a href="/"
-                        class="link header__menu-item header__menu-item_white header__menu-item_active">Главная</a>
-                    <a href="/src/about.html" class="link header__menu-item header__menu-item_white ">О проекте</a>
+                        class="header__menu-item header__menu-item_white header__menu-item_active header__menu-item_active_white">Главная</a>
+                    <a href="/about.html" class="header__menu-item header__menu-item_white ">О проекте</a>
                 </nav>
             </header>
 
             <section class="search">
                 <div class="search__panel">
                     <h1 class="search__title title">Что в мире творится?</h1>
-                    <h2 class="search__subtitle subtitle">Введите в поиске любую тему и узнайте, насколько популярной
+                    <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной
                         она была в новостях за прошедшую неделю.</h2>
                     <form name="search__form" class="search__form">
                         <input type="text" class="search__input" name="search" placeholder="Введите тему новости"
@@ -41,9 +41,10 @@
             <div class="results__inside root__section">
                 <!-- ничего не найдено -->
                 <!-- <div class="not-found">
-                    <img src="../src/images/not-found.svg" alt="ничего не найдено" class="not-found__img">
+                    <img src="<%=require('../src/images/not-found.svg').default%>" alt="ничего не найдено"
+                        class="not-found__img">
                     <h3 class="title not-found__title">Ничего не найдено</h3>
-                    <h4 class="subtitle not-found__subtitle muted-text">К сожалению по вашему запросу
+                    <h4 class="not-found__subtitle muted-text">К сожалению по вашему запросу
                         ничего не найдено.</h4>
                 </div> -->
 
@@ -53,10 +54,11 @@
                     <p class="preloader__text muted-text">Идет поиск новостей...</p>
                 </div> -->
 
-                <div class="results__header">
-                    <h2 class="results__title title">Результаты поиска</h2>
-                    <a href="/src/stat.html" class="results__link link">Посмотреть аналитику <img
-                            src="../src/images/arrow.svg" alt="стрелка вправо" class="results__arrow"></a>
+                <div class="list-header">
+                    <h2 class="list-header__title title">Результаты поиска</h2>
+                    <a href="/stat.html" class="list-header__link link">Посмотреть аналитику <img
+                            src="<%=require('../src/images/arrow.svg').default%>" alt="стрелка вправо"
+                            class="list-header__arrow"></a>
                 </div>
 
                 <div class="results__cards-wrapper">
@@ -90,7 +92,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_07.png');">
+                                style="background-image: url('../src/images/image_07.png')">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -166,17 +168,18 @@
             <div class="copyright muted-text">&copy; 2019 Supersite</div>
             <nav class="footer-menu">
                 <a href="/" class="link footer-menu__item">Главная</a>
-                <a href="/src/about.html" class="link footer-menu__item">О проекте</a>
+                <a href="/about.html" class="link footer-menu__item">О проекте</a>
                 <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
             </nav>
 
             <div class="footer-links">
                 <a href="https://www.github.com/" class="footer-links__item">
-                    <img src="../src/images/github.svg" alt="github" class="footer-links__icon">
+                    <img src="<%=require('../src/images/github.svg').default%>" alt="github" class="footer-links__icon">
                 </a>
 
                 <a href="https://www.facebook.com/" class="footer-links__item">
-                    <img src="../src/images/facebook.svg" alt="facebook" class="footer-links__icon">
+                    <img src="<%=require('../src/images/facebook.svg').default%>" alt="facebook"
+                        class="footer-links__icon">
                 </a>
             </div>
         </section>

@@ -1,16 +1,10 @@
 @import url(./_active/header__menu-item_active.css);
 @import url(./_white/header__menu-item_white.css);
+@import url(./_black/header__menu-item_black.css);
 
 .header__menu-item {
-    padding: 25px 0;
-}
-
-.header__menu-item:hover {
-    background-image: url('../../../images/Stroke.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: contain;
+    padding: 28px 0;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 580px) {

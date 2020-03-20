@@ -1,0 +1,5 @@
+.commit-card__person {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}

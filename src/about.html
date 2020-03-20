@@ -3,21 +3,204 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Diplom</title>
+    <title>NewsAnalyzer</title>
+    <meta name="description" content="Дипломный проект Яндекс.практикум по профессии frontend-разработчик" />
+    <meta name="author" content="Печуева Александра">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="" type="image/png">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+
 </head>
 
 <body>
     <div class="root">
-        <!-- <div class="header-extended"> -->
-        <header class="header root__header">
+        <header class="header header_black root__fullwidth-section">
             <p class="logo">NewsAnalyzer</p>
             <nav class="header__menu">
-                <a href="/" class="link header__menu-item">Главная</a>
-                <a href="/src/about.html" class="link header__menu-item header__menu-item_active ">О проекте</a>
+                <a href="/" class="link header__menu-item header__menu-item_black">Главная</a>
+                <a href="/src/about.html"
+                    class="link header__menu-item header__menu-item_active header__menu-item_active_black">О проекте</a>
             </nav>
         </header>
-        <!-- </div> -->
+        <section class="clients root__section">
+            <h1 class="clients__title title">Клиентам</h1>
+            <div class="clients__content">
+                <p class="clients__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать,
+                    чему научился студент, какими технологиями владеет. </p>
+                <p class="clients__text">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+                    масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в
+                    проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+                <p class="clients__text">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть
+                    сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования
+                    сервиса.</p>
+                <p class="clients__text">При создании проекта была использована сборка технологией Webpack. Это
+                    современный подход к
+                    разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
+                    браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
+                    отображением. А значит, потенциальная аудитория возрастает.</p>
+                <p class="clients__text">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен
+                    сайт, мы рекомендуем обратиться к этому студенту.</p>
+            </div>
+        </section>
+
+        <section class="technologies root__fullwidth-section">
+            <div class="technologies__title-wrapper">
+                <h2 class="technologies__title title">Используемые технологии</h2>
+            </div>
+            <div class="technologies__list">
+                <div class="technology">
+                    <h3 class="technology__title">HTML</h3>
+                    <div class="technology__image-wrapper">
+                        <img src="../src/images/html.svg" alt="html icon"
+                            class="technology__image technology__image_shield">
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <h3 class="technology__title">CSS</h3>
+                    <div class="technology__image-wrapper">
+                        <img src="../src/images/css.svg" alt="css icon"
+                            class="technology__image technology__image_shield">
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <h3 class="technology__title">Java Script</h3>
+                    <div class="technology__image-wrapper">
+                        <img src="../src/images/js.svg" alt="js icon" class="technology__image">
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <h3 class="technology__title">Webpack</h3>
+                    <div class="technology__image-wrapper">
+                        <img src="../src/images/webpack.svg" alt="Webpack icon" class="technology__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="author root__section">
+            <img src="../src/images/image_08.png" alt="фото автора" class="author__photo">
+            <div class="author__about">
+                <h2 class="author__title title">Об авторе</h2>
+                <p class="author__about-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                    чем вы занимаетесь, какими технологиями разработки владеете.</p>
+                <p class="author__about-text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+                    научились, и чем можете помочь
+                    потенциальным заказчикам.</p>
+            </div>
+        </section>
+
+        <section class="commits">
+            <div class="list-header root__fullwidth-section">
+                <h2 class="list-header__title title">История коммитов из GitHub</h2>
+                <a href="https://github.com/AlexandraPechueva/praktikum_diplom/commits/master"
+                    class="list-header__link link">Открыть в Github<img src="../src/images/arrow.svg"
+                        alt="стрелка вправо" class="list-header__arrow"></a>
+            </div>
+
+            <div class="commits__slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <div class="commit-card__content">
+                                    <p class="commit-card__date muted-text">14 августа, 2019</p>
+                                    <div class="commit-card__person">
+                                        <div class="commit-card__photo"
+                                            style="background-image: url('../src/images/image-01.png');">
+                                        </div>
+                                        <div class="commit-card__contacts">
+                                            <h3 class="commit-card__name title">Антон Долинин</h3>
+                                            <h4 class="commit-card__email">anton@yandex.ru</h4>
+                                        </div>
+                                    </div>
+
+                                    <p class="commit-card__text">Emmet (formerly Zen Coding) is a
+                                        web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <div class="commit-card__content">
+                                    <p class="commit-card__date muted-text">14 августа, 2019</p>
+                                    <div class="commit-card__person">
+                                        <div class="commit-card__photo"
+                                            style="background-image: url('../src/images/image-04.png');">
+                                        </div>
+                                        <div class="commit-card__contacts">
+                                            <h3 class="commit-card__name title">Мария Федорова</h3>
+                                            <h4 class="commit-card__email">mariiifed@yandex.ru</h4>
+                                        </div>
+                                    </div>
+
+                                    <p class="commit-card__text">
+                                        You can install this plugin directly from NetBeans Plugin Portal: in NetBeans,
+                                        open Tools > Plugins > Available plugins and find and install Emmet plugin.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <div class="commit-card__content">
+                                    <p class="commit-card__date muted-text">14 августа, 2019</p>
+                                    <div class="commit-card__person">
+                                        <div class="commit-card__photo"
+                                            style="background-image: url('../src/images/image-03.png');">
+                                        </div>
+                                        <div class="commit-card__contacts">
+                                            <h3 class="commit-card__name title">Инга Иванова</h3>
+                                            <h4 class="commit-card__email">ingaiva@yandex.ru</h4>
+                                        </div>
+                                    </div>
+
+                                    <p class="commit-card__text">
+                                        With Emmet, you can type CSS-like expressions that can be dynamically parsed,
+                                        and produce output depending on what you type in the abb...
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="footer root__section">
+            <div class="copyright muted-text">&copy; 2019 Supersite</div>
+            <nav class="footer-menu">
+                <a href="/" class="link footer-menu__item">Главная</a>
+                <a href="/about.html" class="link footer-menu__item">О проекте</a>
+                <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
+            </nav>
+
+            <div class="footer-links">
+                <a href="https://www.github.com/" class="footer-links__item">
+                    <img src="../src/images/github.svg" alt="github" class="footer-links__icon">
+                </a>
+
+                <a href="https://www.facebook.com/" class="footer-links__item">
+                    <img src="../src/images/facebook.svg" alt="facebook" class="footer-links__icon">
+                </a>
+            </div>
+        </section>
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>

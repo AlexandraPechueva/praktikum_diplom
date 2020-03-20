@@ -5,6 +5,34 @@
 @import url(../blocks/link/link.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/link/link.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/logo/logo.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/clients/clients.css);
+@import url(../blocks/technologies/technologies.css);
+@import url(../blocks/technology/technology.css);
+@import url(../blocks/author/author.css);
+@import url(../blocks/list_header/list-header.css);
+@import url(../blocks/commits/commits.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/copyright/copyright.css);
+@import url(../blocks/footer-menu/footer-menu.css);
+@import url(../blocks/footer-links/footer-links.css);
+/* @import url(../blocks/results-card/results-card.css); */
+@import url(../blocks/commit-card/commit-card.css);
+@import url(../blocks/commit-card/__content/commit-card__content.css);
+@import url(../blocks/commit-card/__date/commit-card__date.css);
+@import url(../blocks/commit-card/__person/commit-card__person.css);
+@import url(../blocks/commit-card/__photo/commit-card__photo.css);
+@import url(../blocks/commit-card/__contacts/commit-card__contacts.css);
+@import url(../blocks/commit-card/__name/commit-card__name.css);
+@import url(../blocks/commit-card/__email/commit-card__email.css);
+@import url(../blocks/commit-card/__text/commit-card__text.css);
+@import url(../../node_modules/swiper/css/swiper.min.css);
+@import url(../vendor/swiper/swiper-container.css);
+/* @import url(../vendor/swiper/swiper-slide.css); */
+@import url(../vendor/swiper/swiper-button-next.css);
+@import url(../vendor/swiper/swiper-button-prev.css);
+@import url(../vendor/swiper/swiper-pagination-bullet.css);
+@import url(../vendor/swiper/swiper-slide-duplicate-next.css);
+@import url(../vendor/swiper/swiper-slide-duplicate-prev.css);
+

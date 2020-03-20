@@ -1,11 +1,12 @@
 @import url(./__section/root__section.css);
-@import url(./__header/root__header.css);
+@import url(./__fullwidth-section/root__fullwidth-section.css);
 
 .root {
   min-width: 300px;
   margin: 0 auto;
-  overflow: hidden;
-  font-family: 'Roboto', Arial, sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

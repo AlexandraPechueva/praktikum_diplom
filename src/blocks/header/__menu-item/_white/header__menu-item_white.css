@@ -1,3 +1,7 @@
 .header__menu-item_white {
     color: #ffffff;
 }
+
+.header__menu-item_white:hover {
+    border-bottom: 3px solid white;
+}

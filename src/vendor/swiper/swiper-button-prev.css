@@ -1,0 +1,7 @@
+.swiper-button-prev {
+    background-image: url('../../images/slider-control-left.svg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    color: transparent;
+}
