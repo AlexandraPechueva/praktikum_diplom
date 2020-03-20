@@ -14,4 +14,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #1a1b22;
+  font-size: 18px;
+  line-height: 24px;
 }
