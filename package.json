@@ -9,6 +9,9 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "author": "Alexandra Pechueva",
   "license": "ISC",
   "devDependencies": {
