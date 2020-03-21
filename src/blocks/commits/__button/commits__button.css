@@ -2,6 +2,11 @@
     display: none;
 }
 
+.commits__button:active {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 580px) {
     .commits__button {
         display: flex;
@@ -12,4 +17,4 @@
         align-items: center;
         justify-content: center;
     }
-} 
+}

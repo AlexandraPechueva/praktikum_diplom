@@ -12,3 +12,7 @@
         height: 128px;
     }
 }
+
+.search__form:active {
+    outline: none;
+}
