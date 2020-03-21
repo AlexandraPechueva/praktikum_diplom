@@ -7,7 +7,7 @@
     <meta name="description" content="Дипломный проект Яндекс.практикум по профессии frontend-разработчик" />
     <meta name="author" content="Печуева Александра">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="" type="image/png">
+    <link rel="shortcut icon" href="<%=require('../src/images/A.svg').default%>" type="image/png">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.stat.css %>">
 </head>
 
@@ -16,8 +16,8 @@
         <header class="header header_black root__fullwidth-section">
             <p class="logo">NewsAnalyzer</p>
             <nav class="header__menu">
-                <a href="/" class="link header__menu-item header__menu-item_black">Главная</a>
-                <a href="/about.html" class="link header__menu-item header__menu-item_black">О проекте</a>
+                <a href="./index.html" class="link header__menu-item header__menu-item_black">Главная</a>
+                <a href="./about.html" class="link header__menu-item header__menu-item_black">О проекте</a>
             </nav>
         </header>
 
@@ -86,19 +86,18 @@
         <section class="footer root__section">
             <div class="copyright muted-text">&copy; 2019 Supersite</div>
             <nav class="footer-menu">
-                <a href="/" class="link footer-menu__item">Главная</a>
-                <a href="/about.html" class="link footer-menu__item">О проекте</a>
+                <a href="./index.html" class="link footer-menu__item">Главная</a>
+                <a href="./about.html" class="link footer-menu__item">О проекте</a>
                 <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
             </nav>
 
             <div class="footer-links">
                 <a href="https://www.github.com/" class="footer-links__item">
-                    <img src="<%=require('../src/images/github.svg').default%>" alt="github" class="footer-links__icon">
+                    <img src="<%=require('./images/github.svg').default%>" alt="github" class="footer-links__icon">
                 </a>
 
                 <a href="https://www.facebook.com/" class="footer-links__item">
-                    <img src="<%=require('../src/images/facebook.svg').default%>" alt="facebook"
-                        class="footer-links__icon">
+                    <img src="<%=require('./images/facebook.svg').default%>" alt="facebook" class="footer-links__icon">
                 </a>
             </div>
         </section>

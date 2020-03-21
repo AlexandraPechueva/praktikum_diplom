@@ -7,7 +7,7 @@
     <meta name="description" content="Дипломный проект Яндекс.практикум по профессии frontend-разработчик" />
     <meta name="author" content="Печуева Александра">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="" type="image/png">
+    <link rel="shortcut icon" href="<%=require('./images/A.svg').default%>" type="image/png">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
 
 </head>
@@ -17,8 +17,8 @@
         <header class="header header_black root__fullwidth-section">
             <p class="logo">NewsAnalyzer</p>
             <nav class="header__menu">
-                <a href="/" class="link header__menu-item header__menu-item_black">Главная</a>
-                <a href="/src/about.html"
+                <a href="./index.html" class="link header__menu-item header__menu-item_black">Главная</a>
+                <a href="./about.html"
                     class="link header__menu-item header__menu-item_active header__menu-item_active_black">О проекте</a>
             </nav>
         </header>
@@ -51,7 +51,7 @@
                 <div class="technology">
                     <h3 class="technology__title">HTML</h3>
                     <div class="technology__image-wrapper">
-                        <img src="../src/images/html.svg" alt="html icon"
+                        <img src="<%=require('./images/html.svg').default%>" alt="html icon"
                             class="technology__image technology__image_shield">
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="technology">
                     <h3 class="technology__title">CSS</h3>
                     <div class="technology__image-wrapper">
-                        <img src="../src/images/css.svg" alt="css icon"
+                        <img src="<%=require('./images/css.svg').default%>" alt="css icon"
                             class="technology__image technology__image_shield">
                     </div>
                 </div>
@@ -67,21 +67,22 @@
                 <div class="technology">
                     <h3 class="technology__title">Java Script</h3>
                     <div class="technology__image-wrapper">
-                        <img src="../src/images/js.svg" alt="js icon" class="technology__image">
+                        <img src="<%=require('./images/js.svg').default%>" alt="js icon" class="technology__image">
                     </div>
                 </div>
 
                 <div class="technology">
                     <h3 class="technology__title">Webpack</h3>
                     <div class="technology__image-wrapper">
-                        <img src="../src/images/webpack.svg" alt="Webpack icon" class="technology__image">
+                        <img src="<%=require('./images/webpack.svg').default%>" alt="Webpack icon"
+                            class="technology__image">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="author root__section">
-            <img src="../src/images/image_08.png" alt="фото автора" class="author__photo">
+            <img src="<%=require('./images/image_08.png').default%>" alt="фото автора" class="author__photo">
             <div class="author__about">
                 <h2 class="author__title title">Об авторе</h2>
                 <p class="author__about-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
@@ -96,8 +97,9 @@
             <div class="list-header root__fullwidth-section">
                 <h2 class="list-header__title title">История коммитов из GitHub</h2>
                 <a href="https://github.com/AlexandraPechueva/praktikum_diplom/commits/master" target="_blank"
-                    class="list-header__link commits__link link">Открыть в Github<img src="../src/images/arrow.svg"
-                        alt="стрелка вправо" class="list-header__arrow"></a>
+                    class="list-header__link commits__link link">Открыть в Github<img
+                        src="<%=require('./images/arrow.svg').default%>" alt="стрелка вправо"
+                        class="list-header__arrow"></a>
             </div>
 
             <div class="commits__slider">
@@ -112,7 +114,7 @@
                                     <p class="commit-card__date muted-text">14 августа, 2019</p>
                                     <div class="commit-card__person">
                                         <div class="commit-card__photo"
-                                            style="background-image: url('../src/images/image-01.png');">
+                                            style="background-image: url('<%=require('./images/image-01.png').default%>'">
                                         </div>
                                         <div class="commit-card__contacts">
                                             <h3 class="commit-card__name title">Антон Долинин</h3>
@@ -133,7 +135,7 @@
                                     <p class="commit-card__date muted-text">14 августа, 2019</p>
                                     <div class="commit-card__person">
                                         <div class="commit-card__photo"
-                                            style="background-image: url('../src/images/image-04.png');">
+                                            style="background-image: url('<%=require('./images/image-04.png').default%>'">
                                         </div>
                                         <div class="commit-card__contacts">
                                             <h3 class="commit-card__name title">Мария Федорова</h3>
@@ -156,7 +158,7 @@
                                     <p class="commit-card__date muted-text">14 августа, 2019</p>
                                     <div class="commit-card__person">
                                         <div class="commit-card__photo"
-                                            style="background-image: url('../src/images/image-03.png');">
+                                            style="background-image: url('<%=require('./images/image-03.png').default%>'">
                                         </div>
                                         <div class="commit-card__contacts">
                                             <h3 class="commit-card__name title">Инга Иванова</h3>
@@ -193,18 +195,18 @@
         <section class="footer root__section">
             <div class="copyright muted-text">&copy; 2019 Supersite</div>
             <nav class="footer-menu">
-                <a href="/" class="link footer-menu__item">Главная</a>
-                <a href="/about.html" class="link footer-menu__item">О проекте</a>
+                <a href="index.html" class="link footer-menu__item">Главная</a>
+                <a href="./about.html" class="link footer-menu__item">О проекте</a>
                 <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
             </nav>
 
             <div class="footer-links">
                 <a href="https://www.github.com/" class="footer-links__item">
-                    <img src="../src/images/github.svg" alt="github" class="footer-links__icon">
+                    <img src="<%=require('./images/github.svg').default%>" alt="github" class="footer-links__icon">
                 </a>
 
                 <a href="https://www.facebook.com/" class="footer-links__item">
-                    <img src="../src/images/facebook.svg" alt="facebook" class="footer-links__icon">
+                    <img src="<%=require('./images/facebook.svg').default%>" alt="facebook" class="footer-links__icon">
                 </a>
             </div>
         </section>

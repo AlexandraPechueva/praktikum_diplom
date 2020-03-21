@@ -7,7 +7,7 @@
     <meta name="description" content="Дипломный проект Яндекс.практикум по профессии frontend-разработчик" />
     <meta name="author" content="Печуева Александра">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/src/images/A.svg" type="image/png">
+    <link rel="shortcut icon" href="<%=require('./images/A.svg').default%>" type="image/png">
     <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index.css %>">
 </head>
 
@@ -17,9 +17,9 @@
             <header class="header header_white root__fullwidth-section">
                 <p class="logo logo_white">NewsAnalyzer</p>
                 <nav class="header__menu">
-                    <a href="/"
+                    <a href="./index.html"
                         class="header__menu-item header__menu-item_white header__menu-item_active header__menu-item_active_white">Главная</a>
-                    <a href="/about.html" class="header__menu-item header__menu-item_white ">О проекте</a>
+                    <a href="./about.html" class="header__menu-item header__menu-item_white ">О проекте</a>
                 </nav>
             </header>
 
@@ -41,7 +41,7 @@
             <div class="results__inside root__section">
                 <!-- ничего не найдено -->
                 <!-- <div class="not-found">
-                    <img src="<%=require('../src/images/not-found.svg').default%>" alt="ничего не найдено"
+                    <img src="<%=require('./images/not-found.svg').default%>" alt="ничего не найдено"
                         class="not-found__img">
                     <h3 class="title not-found__title">Ничего не найдено</h3>
                     <h4 class="not-found__subtitle muted-text">К сожалению по вашему запросу
@@ -56,16 +56,15 @@
 
                 <div class="list-header">
                     <h2 class="list-header__title title">Результаты поиска</h2>
-                    <a href="/stat.html" class="list-header__link link">Посмотреть аналитику <img
-                            src="<%=require('../src/images/arrow.svg').default%>" alt="стрелка вправо"
+                    <a href="./stat.html" class="list-header__link link">Посмотреть аналитику <img
+                            src="<%=require('./images/arrow.svg').default%>" alt="стрелка вправо"
                             class="list-header__arrow"></a>
                 </div>
 
                 <div class="results__cards-wrapper">
                     <div class="results__cards ">
                         <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_08.png');">
+                            <div class="results-card__photo" style="background-image: url('./images/image_08.png');">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -79,7 +78,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_04.png');">
+                                style="background-image: url('<%=require('./images/image_04.png').default%>')">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -92,7 +91,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_07.png')">
+                                style="background-image: url('<%=require('./images/image_07.png').default%>')">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -106,7 +105,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_06.png');">
+                                style="background-image: url('<%=require('./images/image_06.png').default%>')">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -119,7 +118,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_01.png');">
+                                style="background-image: url('<%=require('./images/image_01.png').default%>'">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -132,7 +131,7 @@
                         </div>
                         <div class="results-card">
                             <div class="results-card__photo"
-                                style="background-image: url('../src/images/image_05.png');">
+                                style="background-image: url('<%=require('./images/image_05.png').default%>'">
                             </div>
                             <div class="results-card__content">
                                 <p class="results-card__date muted-text">2 августа, 2019</p>
@@ -153,7 +152,7 @@
         </section>
 
         <section class="author root__section">
-            <img src="../src/images/image_08.png" alt="фото автора" class="author__photo">
+            <img src="<%=require('./images/image_08.png').default%>" alt="фото автора" class="author__photo">
             <div class="author__about">
                 <h2 class="author__title title">Об авторе</h2>
                 <p class="author__about-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
@@ -167,19 +166,18 @@
         <section class="footer root__section">
             <div class="copyright muted-text">&copy; 2019 Supersite</div>
             <nav class="footer-menu">
-                <a href="/" class="link footer-menu__item">Главная</a>
-                <a href="/about.html" class="link footer-menu__item">О проекте</a>
+                <a href="./index.html" class="link footer-menu__item">Главная</a>
+                <a href="./about.html" class="link footer-menu__item">О проекте</a>
                 <a href="https://praktikum.yandex.ru/" class="link footer-menu__item">Яндекс.Практикум</a>
             </nav>
 
             <div class="footer-links">
                 <a href="https://www.github.com/" class="footer-links__item">
-                    <img src="<%=require('../src/images/github.svg').default%>" alt="github" class="footer-links__icon">
+                    <img src="<%=require('./images/github.svg').default%>" alt="github" class="footer-links__icon">
                 </a>
 
                 <a href="https://www.facebook.com/" class="footer-links__item">
-                    <img src="<%=require('../src/images/facebook.svg').default%>" alt="facebook"
-                        class="footer-links__icon">
+                    <img src="<%=require('./images/facebook.svg').default%>" alt="facebook" class="footer-links__icon">
                 </a>
             </div>
         </section>
