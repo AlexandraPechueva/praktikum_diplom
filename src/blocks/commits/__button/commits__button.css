@@ -1,0 +1,15 @@
+.commits__button {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .commits__button {
+        display: flex;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+} 

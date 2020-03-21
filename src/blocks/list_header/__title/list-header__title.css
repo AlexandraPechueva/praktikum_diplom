@@ -10,3 +10,15 @@
         line-height: 34px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .list-header__title {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .list-header__title {
+        width: 60%;
+    }
+}

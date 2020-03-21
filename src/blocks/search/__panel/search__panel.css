@@ -11,12 +11,6 @@
 
 @media screen and (max-width: 580px) {
      .search__panel{
-          width: 400px;
-     }
-}
-
-@media screen and (max-width: 425px) {
-     .search__panel{
-          width: 288px;
+          width: 100%;
      }
 }

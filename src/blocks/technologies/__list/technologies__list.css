@@ -3,4 +3,12 @@
     width: 50%;
     justify-content: space-between;
     padding-right: 127px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) {
+    .technologies__list {
+        width: 100%;
+        padding: 0 0 50px 0;
+    }
 }

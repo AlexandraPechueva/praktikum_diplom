@@ -2,9 +2,7 @@ import '../pages/about.css';
 import Swiper from 'swiper';
 
 var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 3.5,
     centeredSlides: true,
-    spaceBetween: 16,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -19,8 +17,25 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+        },
 
-    fadeEffect: {
-        crossFade: true
-    },
+        960: {
+            slidesPerView: 3.2,
+            spaceBetween: 16,
+        },
+
+        580: {
+            slidesPerView: 2.2,
+            spaceBetween: 8,
+        },
+
+        425: {
+            slidesPerView: 1.2,
+            spaceBetween: 8,
+        }
+    }
 });

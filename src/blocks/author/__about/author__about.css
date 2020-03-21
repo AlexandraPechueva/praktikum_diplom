@@ -4,6 +4,12 @@
 
 @media screen and (max-width: 1280px) {
     .author__about {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .author__about {
         width: 424px;
     }
 }
@@ -22,12 +28,12 @@
 
 @media screen and (max-width: 580px) {
     .author__about {
-        width: 400px;
+        width: 98%;
     }
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .author__about {
         width: 288px;
     }
-}
+} */

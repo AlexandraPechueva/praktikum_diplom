@@ -5,6 +5,12 @@
 
 @media screen and (max-width: 1024px) {
     .root__section {
+        width: calc(100% - 190px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .root__section {
         width: calc(100% - 80px);
     }
 }
@@ -17,11 +23,11 @@
 
 @media screen and (max-width: 580px) {
     .root__section {
-        width: calc(100% - 160px);
+        width: calc(100% - 120px);
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
     .root__section {
         width: calc(100% - 32px);
     }

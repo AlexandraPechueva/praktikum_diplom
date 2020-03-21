@@ -5,3 +5,9 @@
     color: #1a1b22;
     margin: 0;
 }
+
+@media screen and (max-width: 580px) {
+    .chart__date {
+        line-height: 48px;
+    }
+}
