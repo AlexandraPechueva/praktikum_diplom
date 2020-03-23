@@ -1,5 +1,8 @@
 .header__menu {
     display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .header__menu :not(:last-child) {
