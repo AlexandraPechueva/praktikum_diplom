@@ -24,3 +24,7 @@
     background: #2a65cc;
     cursor: pointer;
 }
+
+.search__button:focus {
+    border: 1px solid #223a66;
+}

@@ -9,6 +9,10 @@
     outline: none;
 }
 
+.search__input:focus {
+    border: 1px solid #313133;
+}
+
 @media screen and (max-width: 580px) {
     .search__input {
         height: 56px;

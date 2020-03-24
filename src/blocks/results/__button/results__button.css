@@ -2,7 +2,6 @@
     background-color: #ffffff;
     border-radius: 80px;
     width: 288px;
-    outline: none;
 }
 
 .results__button:hover {
@@ -13,4 +12,9 @@
 .results__button:active {
     opacity: 0.9;
     cursor: pointer;
+}
+
+.results__button:focus {
+    opacity: 0.9;
+    border: 1px solid #6d6f7a;
 }

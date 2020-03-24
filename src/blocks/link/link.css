@@ -8,3 +8,8 @@
 .link:hover {
     color: #6d6f7a;
 }
+
+.link:focus {
+    border-bottom: 1px dashed #6d6f7a;
+    outline: none;
+}

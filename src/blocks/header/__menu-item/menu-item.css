@@ -7,6 +7,11 @@
     text-decoration: none;
 }
 
+.header__menu-item:focus {
+    outline: none;
+    color: #6d6f7a;
+}
+
 @media screen and (max-width: 992px) {
     .header__menu-item {
         padding: 20px 0;

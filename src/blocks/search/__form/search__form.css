@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.search__form:active {
+    outline: none;
+
+}
+
 @media screen and (max-width: 580px) {
     .search__form{
         position: static;
@@ -13,6 +18,4 @@
     }
 }
 
-.search__form:active {
-    outline: none;
-}
+
