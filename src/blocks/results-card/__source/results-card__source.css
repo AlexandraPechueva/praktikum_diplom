@@ -1,0 +1,11 @@
+.results-card__source {
+    margin: 0;
+    font-family: Roboto Slab;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #b6bcbf;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+}

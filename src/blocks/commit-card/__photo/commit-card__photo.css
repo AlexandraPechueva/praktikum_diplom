@@ -1,0 +1,8 @@
+.commit-card__photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 16px;
+}

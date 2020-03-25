@@ -1,0 +1,19 @@
+@import url(./__caption/chart__caption.css);
+@import url(./__scale-line/chart__scale-line.css);
+@import url(./__times-wrapper/chart__times-wrapper.css);
+@import url(./__times/chart__times.css);
+@import url(./__date-wrapper/chart__date-wrapper.css);
+@import url(./__date/chart__date.css);
+@import url(./__bars-wrapper/chart__bars-wrapper.css);
+@import url(./__bar/chart__bar.css);
+
+.chart {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    grid-template-areas:
+        "caption-date caption-count"
+        "line line"
+        ". times-top"
+        "date bars"
+        ". times-bottom";
+}

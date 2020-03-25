@@ -1,0 +1,9 @@
+.clients__content {
+    width: 66%;   
+}
+
+@media screen and (max-width: 1280px) {
+    .clients__content {
+        width: 100%;
+    }
+}

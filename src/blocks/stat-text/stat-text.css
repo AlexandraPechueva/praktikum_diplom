@@ -1,0 +1,13 @@
+@import url(./__title/stat-text__title.css);
+@import url(./__info/stat-text__info.css);
+@import url(./__accent/stat-text__accent.css);
+
+.stat-text {
+    padding: 80px 0;
+}
+
+@media screen and (max-width: 580px) {
+    .stat-text {
+        padding: 24px 0;
+    }
+}

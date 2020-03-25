@@ -1,0 +1,10 @@
+.author__about-text {
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .author__about-text {
+        font-size: 16px;
+    }
+}

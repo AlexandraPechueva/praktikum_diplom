@@ -1,0 +1,9 @@
+@import url(./_white/header__menu-item_active_white.css);
+@import url(./_black/header__menu-item_active_black.css);
+
+.header__menu-item_active {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+}

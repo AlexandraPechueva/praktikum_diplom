@@ -1,0 +1,18 @@
+@import url(./__slider/commits__slider.css);
+@import url(./__link/commits__link.css);
+@import url(./__button/commits__button.css);
+
+.commits {
+    min-height: 590px;
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 580px) {
+    .commits {
+        /* padding: 32px; */
+        min-height: 568px;
+    }
+}

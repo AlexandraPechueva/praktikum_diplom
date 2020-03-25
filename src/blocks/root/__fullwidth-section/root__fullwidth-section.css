@@ -1,0 +1,33 @@
+.root__fullwidth-section {
+    padding: 0 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .root__fullwidth-section {
+        padding: 0 95px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .root__fullwidth-section {
+        padding: 0 40px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .root__fullwidth-section {
+        padding: 0 52px;
+    }
+} 
+
+@media screen and (max-width: 580px) {
+    .root__fullwidth-section {
+        padding: 0 60px;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .root__fullwidth-section {
+        padding: 0 16px;
+    }
+} 

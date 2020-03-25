@@ -1,0 +1,10 @@
+.results-card__date {
+    font-family: Source Sans Pro;
+    margin: 0 0 12px;
+}
+
+@media screen and (max-width: 580px) {
+    .results-card__date {
+        margin: 0 0 16px;
+    }
+}

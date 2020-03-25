@@ -1,0 +1,13 @@
+@import url(./__item/footer-links__item.css);
+@import url(./__icon/footer-links__icon.css);
+
+.footer-links :not(:last-child) {
+    margin-right: 26px;
+}
+
+@media screen and (max-width: 580px) {
+    .footer-links {
+        padding-top: 15px;
+        text-align: right;
+    }
+}

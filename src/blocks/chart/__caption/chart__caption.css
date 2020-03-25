@@ -1,0 +1,8 @@
+@import url(./_date/chart__caption_date.css);
+
+.chart__caption {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}

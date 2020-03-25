@@ -1,0 +1,16 @@
+.header__menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu :not(:last-child) {
+    margin-right: 34px;
+}
+
+@media screen and (max-width: 580px) {
+    .header__menu :not(:last-child) {
+        margin-right: 11px;
+    }
+}

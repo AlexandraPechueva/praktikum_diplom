@@ -1,0 +1,26 @@
+@import url(./_active/header__menu-item_active.css);
+@import url(./_white/header__menu-item_white.css);
+@import url(./_black/header__menu-item_black.css);
+
+.header__menu-item {
+    padding: 28px 0;
+    text-decoration: none;
+}
+
+.header__menu-item:focus {
+    outline: none;
+    color: #6d6f7a;
+}
+
+@media screen and (max-width: 992px) {
+    .header__menu-item {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header__menu-item {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+}

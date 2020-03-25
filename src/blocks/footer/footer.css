@@ -1,0 +1,22 @@
+.footer {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        min-height: 64px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer {
+        flex-direction: column;
+        align-items: unset;
+        height: 224px;
+        display: grid;
+        grid-template-columns: 184px 1fr;
+    }
+}

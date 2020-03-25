@@ -1,0 +1,11 @@
+.chart-area__title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 48px;
+}
+
+@media screen and (max-width: 580px) {
+    .chart-area__title {
+        padding-bottom: 16px;
+    }
+}

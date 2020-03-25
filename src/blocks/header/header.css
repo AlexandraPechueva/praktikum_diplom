@@ -1,0 +1,23 @@
+@import url(./__menu/header__menu.css);
+@import url(./__menu-item/menu-item.css);
+@import url(./_white/header_white.css);
+@import url(./_black/header_black.css);
+
+.header {
+    min-height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        min-height: 64px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header {
+        min-height: 56px;
+    }
+}

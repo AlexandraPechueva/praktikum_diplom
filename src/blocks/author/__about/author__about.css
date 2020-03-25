@@ -1,0 +1,39 @@
+.author__about {
+    width: 600px;
+}
+
+@media screen and (max-width: 1280px) {
+    .author__about {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .author__about {
+        width: 424px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .author__about {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .author__about {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .author__about {
+        width: 98%;
+    }
+}
+
+/* @media screen and (max-width: 425px) {
+    .author__about {
+        width: 288px;
+    }
+} */

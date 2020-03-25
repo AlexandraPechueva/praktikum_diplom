@@ -1,0 +1,17 @@
+.commits__slider {
+    padding: 64px 0 48px 0;
+    height: 346px;
+}
+
+@media screen and (max-width: 992px) {
+    .commits__slider {
+        padding: 32px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .commits__slider {
+        padding: 16px;
+        height: 330px;
+    }
+}

@@ -1,0 +1,15 @@
+.footer-menu__item {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .footer-menu__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer-menu__item {
+        line-height: 48px;
+    }
+}

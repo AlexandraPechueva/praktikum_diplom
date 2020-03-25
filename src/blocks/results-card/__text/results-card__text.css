@@ -1,0 +1,7 @@
+.results-card__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    height: 88px;
+    overflow: hidden;
+}

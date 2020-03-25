@@ -1,0 +1,7 @@
+@import url(./__small/muted-text__small.css);
+
+.muted-text {
+    font-style: normal;
+    font-weight: normal;
+    color: #b6bcbf;
+}

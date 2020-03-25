@@ -1,0 +1,14 @@
+.swiper-button-next {
+    background-image: url('../../images/slider-control-right.svg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    color: transparent;
+    top: 40%;
+}
+
+@media screen and (max-width: 580px) {
+    .swiper-button-next {
+         top: 45%;
+    }
+}

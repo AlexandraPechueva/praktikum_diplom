@@ -1,0 +1,21 @@
+.search__form {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.search__form:active {
+    outline: none;
+
+}
+
+@media screen and (max-width: 580px) {
+    .search__form{
+        position: static;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 128px;
+    }
+}
+
+

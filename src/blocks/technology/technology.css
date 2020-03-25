@@ -1,0 +1,11 @@
+@import url(./__title/technology__title.css);
+@import url(./__image/technology__image.css);
+@import url(./__image-wrapper/technology__image-wrapper.css);
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 153px;
+}

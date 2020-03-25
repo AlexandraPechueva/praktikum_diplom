@@ -1,0 +1,9 @@
+.commits__link {
+    
+}
+
+@media screen and (max-width: 580px) {
+    .commits__link {
+        display: none;
+    }
+}

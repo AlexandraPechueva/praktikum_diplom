@@ -1,0 +1,9 @@
+.footer-links__item {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+    .footer-links__item {
+        order: 1;
+    }
+}

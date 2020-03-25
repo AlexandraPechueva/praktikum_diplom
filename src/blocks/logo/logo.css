@@ -1,0 +1,18 @@
+@import url(./_logo/logo_white.css);
+
+.logo {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 580px) {
+    .logo {
+        font-size: 16px;
+    }
+}

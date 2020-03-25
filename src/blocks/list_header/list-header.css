@@ -1,0 +1,17 @@
+@import url('./__title/list-header__title.css');
+@import url('./__link/list-header__link.css');
+@import url('./__arrow/list-header__arrow.css');
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 580px) {
+    .list-header {
+        flex-direction: column;
+        align-items: unset;
+        height: 108px;
+    }
+}
