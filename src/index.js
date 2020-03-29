@@ -8,7 +8,7 @@ import { dateFromNow, formatDateToDigitsString } from './js/utils/dates';
 const searchInput = new SearchInput(searchHandler);
 const requestText = document.querySelector('.search__input');
 const requestNewsApiData = {
-    address: 'http://newsapi.org/v2/everything?',
+    address: 'https://newsapi.org/v2/everything?',
     token: '24dc55a83df54dfeb22d95136901e62f'
 }
 

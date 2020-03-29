@@ -46,7 +46,7 @@ const commitsSwiper = new Swiper('.swiper-container', {
     }
 });
 
-const requestGithubApiUrl = 'https:api.github.com/repos/';
+const requestGithubApiUrl = 'https://api.github.com/repos/';
 const githubApi = new GithubApi(requestGithubApiUrl);
 
 let cards = [];
