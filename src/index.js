@@ -21,6 +21,7 @@ const newsCardsContainer = document.querySelector('.results__cards');
 const newsCardList = new NewsCardList(newsCard, newsCardsContainer);
 const results = document.querySelector('.results');
 let newsCards = [];
+const searchButton = document.querySelector('.search__button');
 const showMoreButton = document.querySelector('.results__button');
 const notFound = document.querySelector('.not-found');
 const preloader = document.querySelector('.preloader');
@@ -45,6 +46,11 @@ function hideResultsElements() {
     hideBlock(resultsWrapper);
 }
 
+function changeSearchFormState() {
+    inputField.toggleAttribute('disabled');
+    searchButton.toggleAttribute('disabled');
+}
+
 hideResultsElements();
 
 function searchHandler(event) {
@@ -53,6 +59,7 @@ function searchHandler(event) {
     const isValid = searchInput.checkValidity(inputField, event);
     /* взаимодействие с API, списком карточек и локальным браузерным хранилищем */
     const newsApi = new NewsApi(requestNewsApiData);
+
     hideBlock(requestError);
 
     if (isValid) {
@@ -60,6 +67,8 @@ function searchHandler(event) {
         hideBlock(notFound);
         showBlock(results);
         showBlock(preloader);
+
+        changeSearchFormState();
 
         setTimeout(() =>
             newsApi.getNews(requestText.value, formatDateToDigitsString(now), formatDateToDigitsString(dateFromNow(now, 7)))
@@ -85,6 +94,8 @@ function searchHandler(event) {
                         newsCardList.render(cards, result.articles.slice(0, 3));
                         hideBlock(preloader);
 
+                        changeSearchFormState();
+
                         newsCards = result.articles.slice();
                     }
                 })
@@ -92,6 +103,8 @@ function searchHandler(event) {
                     console.log('Ошибка. Запрос не выполнен', err);
                     showBlock(requestError);
                     hideBlock(preloader);
+
+                    changeSearchFormState();
                 }), 1000);
     }
 

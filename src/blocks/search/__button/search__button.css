@@ -9,6 +9,12 @@
     outline: none;
 }
 
+.search__button:disabled {
+    background: #d1d2d6;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color:rgba(0, 0, 0, 0.2);
+  }
+
 @media screen and (max-width: 580px) {
     .search__button{
         position: static;
@@ -20,7 +26,11 @@
     background: #347eff;
 }
 
-.search__button:active {
+.search__button:disabled:hover{
+    background: #d1d2d6;
+}
+
+.search__button:focus {
     background: #2a65cc;
     cursor: pointer;
 }
