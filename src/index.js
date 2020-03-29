@@ -53,6 +53,7 @@ function searchHandler(event) {
     const isValid = searchInput.checkValidity(inputField, event);
     /* взаимодействие с API, списком карточек и локальным браузерным хранилищем */
     const newsApi = new NewsApi(requestNewsApiData);
+    hideBlock(requestError);
 
     if (isValid) {
         hideResultsElements();
