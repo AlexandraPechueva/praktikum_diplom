@@ -1,11 +1,17 @@
 import '../pages/about.css';
 import Swiper from 'swiper';
+import GithubApi from '../js/modules/GithubApi';
+import CommitCard from '../js/components/CommitCard';
+import CommitCardList from '../js/components/CommitCardList';
 
-var mySwiper = new Swiper('.swiper-container', {
+const commitsSwiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    initialSlide: 2,
+    loopedSlides: 100,
+    loopAdditionalSlides: 100,
 
     // If we need pagination
     pagination: {
@@ -39,3 +45,28 @@ var mySwiper = new Swiper('.swiper-container', {
         }
     }
 });
+
+const requestGithubApiUrl = 'https:api.github.com/repos/';
+const githubApi = new GithubApi(requestGithubApiUrl);
+
+let cards = [];
+const commitCard = new CommitCard();
+
+const commitCardsContainer = document.querySelector('.swiper-wrapper');
+const commitCardList = new CommitCardList(commitCard, commitCardsContainer);
+
+githubApi.getCommits('AlexandraPechueva', 'praktikum_diplom')
+    .then(result => {
+        console.log(result);
+
+        const commitCards = commitCardList.create(cards, result);
+        commitCards.forEach(card => {
+            const commitSlides = [];
+            const slide = document.createElement('div');
+            slide.classList.add('swiper-slide');
+            slide.appendChild(card);
+            commitSlides.push(slide);
+            commitsSwiper.appendSlide(commitSlides);
+            commitsSwiper.init();
+        });
+    });
