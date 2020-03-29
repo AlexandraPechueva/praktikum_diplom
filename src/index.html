@@ -33,7 +33,8 @@
                     <h1 class="search__title title">Что в мире творится?</h1>
                     <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной
                         она была в новостях за прошедшую неделю.</h2>
-                    <form name="search__form" class="search__form">
+                    <form name="search__form" class="search__form" novalidate>
+                        <p class="search__error hidden">Нужно ввести ключевое слово</p>
                         <input type="text" class="search__input" name="search" placeholder="Введите тему новости"
                             required="">
                         <button class="button search__button">Искать</button>
@@ -42,23 +43,31 @@
             </section>
         </div>
 
-        <section class="results">
+        <section class="results hidden">
             <div class="results__inside root__section">
                 <!-- ничего не найдено -->
-                <!-- <div class="not-found">
+                <div class="not-found">
                     <img src="<%=require('./images/not-found.svg').default%>" alt="ничего не найдено"
                         class="not-found__img">
                     <h3 class="title not-found__title">Ничего не найдено</h3>
                     <h4 class="not-found__subtitle muted-text">К сожалению по вашему запросу
                         ничего не найдено.</h4>
-                </div> -->
+                </div>
+
+                <!-- произошла ошибка -->
+                <div class="request-error hidden">
+                    <h3 class="title request-error__title">Во время запроса произошла ошибка.</h3>
+                    <h4 class="request__subtitle muted-text">Возможно, проблема с соединением или сервер недоступен.
+                        Подождите немного и попробуйте ещё раз</h4>
+                </div>
 
                 <!--прелоадер -->
-                <!-- <div class="preloader">
+                <div class="preloader hidden">
                     <i class="circle-preloader"></i>
                     <p class="preloader__text muted-text">Идет поиск новостей...</p>
-                </div> -->
+                </div>
 
+                <!--карточки -->
                 <div class="list-header">
                     <h2 class="list-header__title title">Результаты поиска</h2>
                     <a href="./stat.html" class="list-header__link link">Посмотреть аналитику <img
@@ -68,7 +77,8 @@
 
                 <div class="results__cards-wrapper">
                     <div class="results__cards ">
-                        <div class="results-card">
+                        <!--пример карточки-->
+                        <!--<div class="results-card">
                             <div class="results-card__photo" style="background-image: url('./images/image_08.png');">
                             </div>
                             <div class="results-card__content">
@@ -80,74 +90,7 @@
                                 </p>
                                 <p class="results-card__source muted-text__small">Лента.ру</p>
                             </div>
-                        </div>
-                        <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('<%=require('./images/image_04.png').default%>')">
-                            </div>
-                            <div class="results-card__content">
-                                <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">Лесные огоньки: история одной фотографии</h3>
-                                <p class="results-card__text">Фотограф отвлеклась от освещения суровой политической
-                                    реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                                    из местных чудес природы.</p>
-                                <p class="results-card__source muted-text__small">Медуза</p>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('<%=require('./images/image_07.png').default%>')">
-                            </div>
-                            <div class="results-card__content">
-                                <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">«Первозданная тайга»: новый фотопроект Игоря
-                                    Шпиленка</h3>
-                                <p class="results-card__text">Знаменитый фотограф снимает первозданные леса России,
-                                    чтобы рассказать о необходимости их сохранения. В этот раз он отправился в
-                                    Двинско-Пинежскую тайгу, где...</p>
-                                <p class="results-card__source muted-text__small">Риа</p>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('<%=require('./images/image_06.png').default%>')">
-                            </div>
-                            <div class="results-card__content">
-                                <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">Национальное достояние – парки</h3>
-                                <p class="results-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                                    здесь начала складываться система национальных парков – охраняемых территорий, где и
-                                    сегодня каждый может приобщиться к природе.</p>
-                                <p class="results-card__source muted-text__small">Дзен</p>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('<%=require('./images/image_01.png').default%>'">
-                            </div>
-                            <div class="results-card__content">
-                                <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">Лесные огоньки: история одной фотографии</h3>
-                                <p class="results-card__text">Фотограф отвлеклась от освещения суровой политической
-                                    реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                                    из местных чудес природы.</p>
-                                <p class="results-card__source muted-text__small">Афиша</p>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <div class="results-card__photo"
-                                style="background-image: url('<%=require('./images/image_05.png').default%>'">
-                            </div>
-                            <div class="results-card__content">
-                                <p class="results-card__date muted-text">2 августа, 2019</p>
-                                <h3 class="results-card__title title">«Первозданная тайга»: новый фотопроект Игоря
-                                    Шпиленка</h3>
-                                <p class="results-card__text">Знаменитый фотограф снимает первозданные леса России,
-                                    чтобы рассказать о необходимости их сохранения. В этот раз он отправился в
-                                    Двинско-Пинежскую тайгу, где...</p>
-                                <p class="results-card__source muted-text__small">Медиазона</p>
-                            </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="results__button-wrapper">
