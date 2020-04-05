@@ -1,0 +1,6 @@
+const NEWS_API_ACCESS_DATA = {
+    address: 'https://newsapi.org/v2/everything?',
+    token: '24dc55a83df54dfeb22d95136901e62f'
+};
+
+export { NEWS_API_ACCESS_DATA };

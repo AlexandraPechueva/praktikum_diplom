@@ -21,6 +21,5 @@ export default class NewsCard {
         newsCard.querySelector('.results-card__source').textContent = sourceName;
 
         return newsCard;
-
     }
 }

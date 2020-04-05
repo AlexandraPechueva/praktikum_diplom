@@ -4,14 +4,11 @@ import NewsApi from './js/modules/NewsApi';
 import NewsCard from './js/components/NewsCard';
 import NewsCardList from './js/components/NewsCardList';
 import { dateFromNow, formatDateToDigitsString } from './js/utils/dates';
+import { NEWS_API_ACCESS_DATA } from './js/constatnts/news-api-access-data'
 
 const searchInput = new SearchInput(searchHandler);
-const requestText = document.querySelector('.search__input');
-const requestNewsApiData = {
-    address: 'https://newsapi.org/v2/everything?',
-    token: '24dc55a83df54dfeb22d95136901e62f'
-}
 
+const requestText = document.querySelector('.search__input');
 const now = new Date();
 
 let cards = [];
@@ -19,6 +16,7 @@ const newsCard = new NewsCard();
 
 const newsCardsContainer = document.querySelector('.results__cards');
 const newsCardList = new NewsCardList(newsCard, newsCardsContainer);
+
 const results = document.querySelector('.results');
 let newsCards = [];
 const searchButton = document.querySelector('.search__button');
@@ -57,8 +55,7 @@ function searchHandler(event) {
     event.preventDefault();
 
     const isValid = searchInput.checkValidity(inputField, event);
-    /* взаимодействие с API, списком карточек и локальным браузерным хранилищем */
-    const newsApi = new NewsApi(requestNewsApiData);
+    const newsApi = new NewsApi(NEWS_API_ACCESS_DATA);
 
     hideBlock(requestError);
 
@@ -71,7 +68,7 @@ function searchHandler(event) {
         changeSearchFormState();
 
         setTimeout(() =>
-            newsApi.getNews(requestText.value, formatDateToDigitsString(now), formatDateToDigitsString(dateFromNow(now, 7)))
+            newsApi.getNews(requestText.value, formatDateToDigitsString(now), formatDateToDigitsString(dateFromNow(now, 6)))
                 .then(result => {
                     console.log(result)
                     console.log(result.articles);
@@ -80,6 +77,7 @@ function searchHandler(event) {
                         hideResultsElements();
                         showBlock(notFound);
                         hideBlock(preloader);
+                        changeSearchFormState();
                     }
                     else {
                         if (newsCards.length != 0) {
@@ -113,6 +111,7 @@ function searchHandler(event) {
         setTimeout(() => hideBlock(searchError), 3000);
     }
 }
+
 function showHandler(event) {
     newsCards.splice(0, 3);
     newsCardList.render(cards, newsCards.slice(0, 3));
