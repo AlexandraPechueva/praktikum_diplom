@@ -3,6 +3,7 @@ import SearchInput from './js/components/SearchInput';
 import NewsApi from './js/modules/NewsApi';
 import NewsCard from './js/components/NewsCard';
 import NewsCardList from './js/components/NewsCardList';
+import DataStorage from './js/modules/DataStorage';
 import { dateFromNow, formatDateToDigitsString } from './js/utils/dates';
 import { NEWS_API_ACCESS_DATA } from './js/constatnts/news-api-access-data'
 
@@ -29,6 +30,8 @@ const requestError = document.querySelector('.request-error');
 const searchForm = document.forms.search__form;
 const inputField = document.querySelector('.search__input');
 const searchError = document.querySelector('.search__error');
+
+const dataStorage = new DataStorage();
 
 function hideBlock(block) {
     block.classList.add('hidden');
@@ -70,9 +73,6 @@ function searchHandler(event) {
         setTimeout(() =>
             newsApi.getNews(requestText.value, formatDateToDigitsString(now), formatDateToDigitsString(dateFromNow(now, 6)))
                 .then(result => {
-                    console.log(result)
-                    console.log(result.articles);
-
                     if (result.articles.length == 0) {
                         hideResultsElements();
                         showBlock(notFound);
@@ -84,6 +84,9 @@ function searchHandler(event) {
                             newsCards = [];
                             newsCardList.removeCards();
                         };
+
+                        dataStorage.save(result, "key")
+                        dataStorage.save(requestText.value, "word");
 
                         showBlock(listHeader);
                         showBlock(showMoreButton);
@@ -116,7 +119,6 @@ function showHandler(event) {
     newsCards.splice(0, 3);
     newsCardList.render(cards, newsCards.slice(0, 3));
 
-    console.log(newsCards.length)
     if (newsCards.length <= 3) showMoreButton.style.display = 'none';
 }
 
