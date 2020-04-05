@@ -4,4 +4,5 @@
     margin: 0;
     height: 88px;
     overflow: hidden;
+    word-break: break-word;
 }
