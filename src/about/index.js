@@ -49,7 +49,7 @@ const commitsSwiper = new Swiper('.swiper-container', {
 const requestGithubApiUrl = 'https://api.github.com/repos/';
 const githubApi = new GithubApi(requestGithubApiUrl);
 
-let cards = [];
+const cards = [];
 const commitCard = new CommitCard();
 
 const commitCardsContainer = document.querySelector('.swiper-wrapper');

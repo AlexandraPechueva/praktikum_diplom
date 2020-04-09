@@ -12,7 +12,7 @@ const searchInput = new SearchInput(searchHandler);
 const requestText = document.querySelector('.search__input');
 const now = new Date();
 
-let cards = [];
+const cards = [];
 const newsCard = new NewsCard();
 
 const newsCardsContainer = document.querySelector('.results__cards');

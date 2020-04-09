@@ -15,5 +15,7 @@ export default class NewsApi {
 
                 return Promise.reject(res.status);
             })
+
+            .catch(err => console.log('Ошибка. Запрос не выполнен', err));
     }
 }
