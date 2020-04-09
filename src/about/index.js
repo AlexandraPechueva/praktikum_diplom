@@ -3,6 +3,7 @@ import Swiper from 'swiper';
 import GithubApi from '../js/modules/GithubApi';
 import CommitCard from '../js/components/CommitCard';
 import CommitCardList from '../js/components/CommitCardList';
+import { GITHUB_API_URL } from '../js/constatnts/github-api-url'
 
 const commitsSwiper = new Swiper('.swiper-container', {
     centeredSlides: true,
@@ -46,8 +47,7 @@ const commitsSwiper = new Swiper('.swiper-container', {
     }
 });
 
-const requestGithubApiUrl = 'https://api.github.com/repos/';
-const githubApi = new GithubApi(requestGithubApiUrl);
+const githubApi = new GithubApi(GITHUB_API_URL);
 
 const cards = [];
 const commitCard = new CommitCard();
