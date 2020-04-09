@@ -1,10 +1,10 @@
 export default class GithubApi {
     constructor(requestUrl) {
-        this.requestUrl = requestUrl;
+        this._requestUrl = requestUrl;
     }
 
     getCommits(owner, repo) {
-        const requestString = `${this.requestUrl}${owner}/${repo}/commits`;
+        const requestString = `${this._requestUrl}${owner}/${repo}/commits`;
 
         return fetch(requestString)
             .then(res => {

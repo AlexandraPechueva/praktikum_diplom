@@ -1,6 +1,6 @@
 export default class SearchInput {
     constructor(searchHandler) {
-        this.searchHandler = searchHandler;
+        this._searchHandler = searchHandler;
     }
 
     checkValidity(input, event) {
@@ -11,6 +11,6 @@ export default class SearchInput {
     }
 
     setEventListeners(form) {
-        form.addEventListener('submit', this.searchHandler);
+        form.addEventListener('submit', this._searchHandler);
     }
 }

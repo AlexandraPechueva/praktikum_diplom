@@ -1,13 +1,13 @@
 export default class CommitCardList {
     constructor(card, container) {
-        this.card = card;
-        this.container = container;
+        this._card = card;
+        this._container = container;
     }
 
     create(cards, cardsFromGithub) {
         cards = [];
         cardsFromGithub.forEach(item => {
-            cards.push(this.card.createCard(item.commit.committer.name, item.commit.committer.email, item.commit.committer.date,
+            cards.push(this._card.createCard(item.commit.committer.name, item.commit.committer.email, item.commit.committer.date,
                 item.commit.message, item.author.avatar_url));
         });
 
@@ -15,17 +15,17 @@ export default class CommitCardList {
     }
 
     render(cards) {
-        cards.forEach(card => this.addCard(card));
+        cards.forEach(card => this._addCard(card));
 
     }
 
-    addCard(card) {
-        this.container.appendChild(card);
+    _addCard(card) {
+        this._container.appendChild(card);
     }
 
     removeCards() {
-        while (this.container.hasChildNodes()) {
-            this.container.removeChild(this.container.lastChild);
+        while (this._container.hasChildNodes()) {
+            this._container.removeChild(this._container.lastChild);
         }
     }
 }

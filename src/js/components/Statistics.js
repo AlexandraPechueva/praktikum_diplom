@@ -2,14 +2,14 @@ import { formatDateToDay, dateFromNow } from '../utils/dates';
 
 export default class Statistics {
     constructor(searchedResult, searchedText) {
-        this.searchedResult = searchedResult;
-        this.searchedText = searchedText;
+        this._searchedResult = searchedResult;
+        this._searchedText = searchedText;
     }
 
     getAmountByDays() {
-        const pattern = new RegExp('\\b' + this.searchedText + '\|\(\\s|\\/|\\\\|\"|\'|\«|\,|\:)' + this.searchedText + '\|\^' + this.searchedText, 'g');
+        const pattern = new RegExp('\\b' + this._searchedText + '\|\(\\s|\\/|\\\\|\"|\'|\«|\,|\:)' + this._searchedText + '\|\^' + this._searchedText, 'g');
         const now = new Date();
-        const dates = this.getDates(now, 6);
+        const dates = this._getDates(now, 6);
 
         const counter = dates.sort().map(item => {
             return {
@@ -19,7 +19,7 @@ export default class Statistics {
             }
         })
 
-        this.searchedResult.articles.map(item => {
+        this._searchedResult.articles.map(item => {
             return {
                 date: item.publishedAt,
                 title: item.title != null ? item.title.toLowerCase() : item.title,
@@ -27,7 +27,7 @@ export default class Statistics {
             }
         })
             .filter(item => (item.title != null && item.description != null))
-            .filter(item => item.title.includes(this.searchedText) || item.description.includes(this.searchedText))
+            .filter(item => item.title.includes(this._searchedText) || item.description.includes(this._searchedText))
             .forEach(item => {
                 counter.forEach((day, i) => {
                     if (item.date.substring(0, 10) == day.date) {
@@ -45,7 +45,7 @@ export default class Statistics {
         return counter;
     }
 
-    getDates(now, days) {
+    _getDates(now, days) {
         const dates = [];
         dates.push(now.toISOString().substring(0, 10));
 

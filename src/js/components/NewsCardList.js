@@ -1,26 +1,26 @@
 export default class NewsCardList {
     constructor(card, container) {
-        this.card = card;
-        this.container = container;
+        this._card = card;
+        this._container = container;
     }
 
     render(cards, cardsFromApi) {
         cards = [];
         cardsFromApi.forEach(item => {
-            cards.push(this.card.createCard(item.source.name, item.title, item.publishedAt, item.description, item.urlToImage));
+            cards.push(this._card.createCard(item.source.name, item.title, item.publishedAt, item.description, item.urlToImage));
         });
 
-        cards.forEach(card => this.addCard(card));
+        cards.forEach(card => this._addCard(card));
     }
 
-    addCard(card) {
-        this.container.appendChild(card);
+    _addCard(card) {
+        this._container.appendChild(card);
 
     }
 
     removeCards() {
-        while (this.container.hasChildNodes()) {
-            this.container.removeChild(this.container.lastChild);
+        while (this._container.hasChildNodes()) {
+            this._container.removeChild(this._container.lastChild);
         }
     }
 }

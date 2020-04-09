@@ -1,10 +1,10 @@
 export default class NewsApi {
     constructor(requestData) {
-        this.requestData = requestData;
+        this._requestData = requestData;
     }
 
     getNews(requestText, dateFrom, dateTo) {
-        const requestString = `${this.requestData.address}q=${requestText}&apiKey=${this.requestData.token}&from=${dateFrom}&to=${dateTo}&pageSize=100`;
+        const requestString = `${this._requestData.address}q=${requestText}&apiKey=${this._requestData.token}&from=${dateFrom}&to=${dateTo}&pageSize=100`;
         const request = new Request(requestString);
 
         return fetch(request)
