@@ -20,6 +20,7 @@ const newsCardList = new NewsCardList(newsCard, newsCardsContainer);
 
 const results = document.querySelector('.results');
 let newsCards = [];
+const cardsToShow = 3;
 const searchButton = document.querySelector('.search__button');
 const showMoreButton = document.querySelector('.results__button');
 const notFound = document.querySelector('.not-found');
@@ -92,7 +93,7 @@ function searchHandler(event) {
                         showBlock(showMoreButton);
                         showBlock(resultsWrapper);
 
-                        newsCardList.render(cards, result.articles.slice(0, 3));
+                        newsCardList.render(cards, result.articles.slice(0, cardsToShow));
                         hideBlock(preloader);
 
                         changeSearchFormState();
@@ -115,12 +116,14 @@ function searchHandler(event) {
     }
 }
 
-function showHandler(event) {
-    newsCards.splice(0, 3);
-    newsCardList.render(cards, newsCards.slice(0, 3));
+function showMoreHandler(cardsToShow) {
+    return function () {
+        newsCards.splice(0, cardsToShow);
+        newsCardList.render(cards, newsCards.slice(0, cardsToShow));
 
-    if (newsCards.length <= 3) showMoreButton.style.display = 'none';
+        if (newsCards.length <= cardsToShow) showMoreButton.style.display = 'none';
+    }
 }
 
 searchInput.setEventListeners(searchForm);
-showMoreButton.addEventListener('click', showHandler);
+showMoreButton.addEventListener('click', showMoreHandler(cardsToShow));
