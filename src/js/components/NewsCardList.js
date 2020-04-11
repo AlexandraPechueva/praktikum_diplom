@@ -10,12 +10,16 @@ export default class NewsCardList {
             cards.push(this._card.createCard(item.source.name, item.title, item.publishedAt, item.description, item.urlToImage));
         });
 
-        cards.forEach(card => this._addCard(card));
+        this._addCards(cards);
     }
 
-    _addCard(card) {
-        this._container.appendChild(card);
+    _addCards(cards) {
+        let fragment = document.createDocumentFragment();
+        cards.forEach((card) => {
+            fragment.appendChild(card);
+        });
 
+        this._container.appendChild(fragment);
     }
 
     removeCards() {
