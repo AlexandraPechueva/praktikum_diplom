@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 580px) {
     .commits {
-        /* padding: 32px; */
         min-height: 568px;
     }
 }

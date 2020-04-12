@@ -18,7 +18,6 @@
 @import url(../blocks/copyright/copyright.css);
 @import url(../blocks/footer-menu/footer-menu.css);
 @import url(../blocks/footer-links/footer-links.css);
-/* @import url(../blocks/results-card/results-card.css); */
 @import url(../blocks/commit-card/commit-card.css);
 @import url(../blocks/commit-card/__content/commit-card__content.css);
 @import url(../blocks/commit-card/__date/commit-card__date.css);
@@ -30,7 +29,6 @@
 @import url(../blocks/commit-card/__text/commit-card__text.css);
 @import url(../../node_modules/swiper/css/swiper.min.css);
 @import url(../vendor/swiper/swiper-container.css);
-/* @import url(../vendor/swiper/swiper-slide.css); */
 @import url(../vendor/swiper/swiper-button-next.css);
 @import url(../vendor/swiper/swiper-button-prev.css);
 @import url(../vendor/swiper/swiper-pagination-bullet.css);
