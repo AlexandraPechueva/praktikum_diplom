@@ -1,6 +1,6 @@
 .commit-card {
     background-color: #ffffff;
     border-radius: 16px;
-    min-height: 288px;
+    height: 288px;
     cursor: pointer;
 }

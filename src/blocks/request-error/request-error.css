@@ -1,0 +1,9 @@
+@import './__title/request-error__title.css';
+@import './__subtitle/request-error__subtitle.css';
+
+.request-error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
