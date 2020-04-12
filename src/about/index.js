@@ -57,8 +57,6 @@ const commitCardList = new CommitCardList(commitCard, commitCardsContainer);
 
 githubApi.getCommits('AlexandraPechueva', 'praktikum_diplom')
     .then(result => {
-        console.log(result);
-
         const commitCards = commitCardList.create(cards, result);
         commitCards.forEach(card => {
             const commitSlides = [];
