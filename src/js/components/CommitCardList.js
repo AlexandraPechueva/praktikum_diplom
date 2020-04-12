@@ -13,19 +13,4 @@ export default class CommitCardList {
 
         return cards;
     }
-
-    render(cards) {
-        cards.forEach(card => this._addCard(card));
-
-    }
-
-    _addCard(card) {
-        this._container.appendChild(card);
-    }
-
-    removeCards() {
-        while (this._container.hasChildNodes()) {
-            this._container.removeChild(this._container.lastChild);
-        }
-    }
 }
