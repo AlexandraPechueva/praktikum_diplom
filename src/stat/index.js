@@ -13,6 +13,7 @@ const weekAmount = document.getElementById('week-amount');
 const titleAmount = document.getElementById('title-amount');
 const bars = Array.from(document.querySelectorAll('.chart__bar'));
 const days = Array.from(document.querySelectorAll('.chart__date'));
+const month = document.querySelector('.chart__caption_date');
 
 statTitle.textContent = `Вы искали: ${searchedText}`;
 weekAmount.textContent = searchedResult.totalResults;
@@ -23,3 +24,5 @@ titleAmount.textContent = stat.getTotalTitleAmount(counter);
 
 stat.getBars(counter, bars);
 stat.getDays(counter, days);
+
+month.textContent = `Дата (${stat.getCurrentMonth()})`

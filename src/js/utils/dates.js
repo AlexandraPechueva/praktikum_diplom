@@ -30,3 +30,9 @@ export function formatDateToDay(isoDate) {
 
     return `${date.getDate()}, ${getWeekDay(date.getDay())}`;
 }
+
+export function getMonth(isoDate) {
+    const date = new Date(isoDate);
+
+    return `${date.toLocaleDateString('ru-Ru', { month: 'long' })}`;
+}

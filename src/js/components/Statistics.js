@@ -1,4 +1,4 @@
-import { formatDateToDay, dateFromNow } from '../utils/dates';
+import { formatDateToDay, dateFromNow, getMonth } from '../utils/dates';
 
 export default class Statistics {
     constructor(searchedResult, searchedText) {
@@ -6,10 +6,18 @@ export default class Statistics {
         this._searchedText = searchedText;
     }
 
+    getCurrentMonth() {
+        const now = new Date();
+        const month = getMonth(now);
+        return month;
+    }
+
     getAmountByDays() {
         const pattern = new RegExp('\\b' + this._searchedText + '\|\(\\s|\\/|\\\\|\"|\'|\«|\,|\:)' + this._searchedText + '\|\^' + this._searchedText, 'g');
         const now = new Date();
         const dates = this._getDates(now, 6);
+
+
 
         const counter = dates.sort().map(item => {
             return {
