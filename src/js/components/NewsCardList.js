@@ -7,7 +7,7 @@ export default class NewsCardList {
     render(cards, cardsFromApi) {
         cards = [];
         cardsFromApi.forEach(item => {
-            cards.push(this._card.createCard(item.source.name, item.title, item.publishedAt, item.description, item.urlToImage));
+            cards.push(this._card.createCard(item.source.name, item.title, item.publishedAt, item.description, item.urlToImage, item.url));
         });
 
         this._addCards(cards);
